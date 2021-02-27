@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-This is the front apage 
+This is the front page 
 
 Title
 ======
