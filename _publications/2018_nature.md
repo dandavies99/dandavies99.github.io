@@ -6,9 +6,8 @@ excerpt: 'Our perspective summarising exciting progress in machine learning for 
 date: 2018-07-25
 venue: 'Nature'
 paperurl: #'http://dandavies99.github.io/files/2018_nature.pdf'
-citation: 'K T Butler, D W Davies, H Cartwright, O Isayev and Aron Walsh. &quot;Machine Learning for Molecular and Materials Science&quot; <i>Nature</i>, 559 (2018).'
+citation: 'K T Butler, D W Davies, H Cartwright, O Isayev and A Walsh. &quot;Machine Learning for Molecular and Materials Science&quot; <i>Nature</i>, 559 (2018).'
 ---
-We outline how machine learning techniques are rapidly changing the game in all areas of chemistry, from guiding chemical synthesis, to enhancing theoretical chemistry, to directly accelerating the scientific method. We tried to cover many areas while ensuring this paper is a useful quick start guide for readers new to the topic. 
+We outline how machine learning techniques are rapidly changing the game in all areas of chemistry, from guiding chemical synthesis, to enhancing theoretical chemistry, to directly accelerating the scientific method. We tried to cover many areas while ensuring this paper is a useful quick-start guide for readers new to the topic. 
 
 [Download paper here](http://dandavies99.github.io/files/2018_nature.pdf)
-
