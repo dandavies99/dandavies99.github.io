@@ -1,5 +1,5 @@
 ---
-title: "Applications of crystal structure prediction–inorganic and network structures: general discussion"
+title: "Applications of Crystal Structure Prediction–Inorganic and Network Structures: General Discussion"
 collection: publications
 permalink: /publication/2018_faradaydiscuss
 excerpt: 'General discussion that followed presentation of [our work on oxidation states](https://dandavies99.github.com/publication/2018_faradaydiscuss2) at an RSC Faraday Discussions meeting on structure prediction.'
