@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website! My name is Dan and I am a computational materials chemist, currently based in the chemistry department of UCL within the group of [Prof. David Scanon](www.davidscanlon.com). Previously, I carried out [my PhD](https://dandavies99.github.io/files/my_thesis.pdf) under the supervision of [Prof. Aron Walsh](https://wmd-group.github.io) then was awarded a [Doctoral Prize Fellowship](https://epsrc.ukri.org/skills/students/dta/doctoralprize/) at Imperial College London. 
+Hello and welcome to my website! My name is Dan and I am a computational materials chemist, currently based in the chemistry department of UCL within the group of [Prof. David Scanon](https://davidscanlon.com). Previously, I carried out [my PhD](https://dandavies99.github.io/files/my_thesis.pdf) under the supervision of [Prof. Aron Walsh](https://wmd-group.github.io) then was awarded a [Doctoral Prize Fellowship](https://epsrc.ukri.org/skills/students/dta/doctoralprize/) at Imperial College London. 
 
 About my Research
 ======
