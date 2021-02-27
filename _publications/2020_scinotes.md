@@ -14,4 +14,4 @@ In this study, we present practical procedures for using simple descriptors rela
 
 ![toc](../images/scinotes_fig.jpg)
 
-[Download paper here](http://dandavies99.github.io/files/2020_scinotes.pdf)j
+[Download paper here](http://dandavies99.github.io/files/2020_scinotes.pdf)
