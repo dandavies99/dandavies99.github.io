@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Dan and I'm a computational materials chemist, currently based in the chemistry department of UCL within the group of [Prof. David Scanlon](http://davidscanlon.com). I completed a Chemistry MRes at the University of Bath, then stayed on to carry out my PhD on [_"Materials discovery using chemical heuristics and high-throughput calculations"_](https://dandavies99.github.io/files/my_thesis.pdf) under the supervision of [Prof. Aron Walsh](https://wmd-group.github.io). I was then awarded a [Doctoral Prize Fellowship](https://epsrc.ukri.org/skills/students/dta/doctoralprize/) at Imperial College London. 
+My name is Dan and I'm a computational materials chemist, currently based in the chemistry department of UCL within the group of [Prof. David Scanlon](http://davidscanlon.com). I completed a Chemistry MChem at the University of Bath, then stayed on to carry out my MRes, then PhD on [_"Materials discovery using chemical heuristics and high-throughput calculations"_](https://dandavies99.github.io/files/my_thesis.pdf) under the supervision of [Prof. Aron Walsh](https://wmd-group.github.io). I was then awarded a [Doctoral Prize Fellowship](https://epsrc.ukri.org/skills/students/dta/doctoralprize/) at Imperial College London. 
 
 About my research
 ======
@@ -18,7 +18,7 @@ Searching the materials hyperspace
 
 My research focuses on the discovery of new inorganic materials for clean energy. Application areas have so far included solar absorbers, transparent conductors, thermoelectrics, photocatalysts and battery cathodes. 
 
-The workflow of a typical study is often something like: **1.** generate a sensible, and often very large, search space of hypothetical compositions or compounds (see the [SMACT](https://github.com/wmd-group/smact) code) **2.** Use chemical heuristics, machine learning, or other data-driven filters to significantly narrow down the search space **3.** subject top candidates to accurate first-principles methods to predict their properties.
+The workflow of a typical study is often something like: **1.** generate a sensible, and often very large, search space of hypothetical compositions or compounds (see the [SMACT](https://github.com/wmd-group/smact) code) **2.** use chemical heuristics, machine learning, or other data-driven filters to significantly narrow down the search space **3.** subject top candidates to accurate first-principles methods to predict their properties.
 
 Software
 -----
