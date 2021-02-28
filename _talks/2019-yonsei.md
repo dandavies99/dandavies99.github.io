@@ -9,3 +9,5 @@ location: "Yonsei University, Korea"
 ---
 
 Invited talk at workshop between Materials Science departments of various universities in Seoul, hosted at [Yonsei University](https://www.yonsei.ac.kr/en_sc/index.jsp).
+
+![me talking](/images/yonsei_talk.jpeg)

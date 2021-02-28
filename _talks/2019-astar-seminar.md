@@ -1,5 +1,5 @@
 ---
-title: "(Invited) Accelerating the discovery of energy materials using first-principles machine learning"
+title: "(Invited) Chemical heuristics, ML and first-principles calculations for high-throughput materials discovery"
 collection: talks
 type: "Invited talk"
 permalink: /talks/2019-astar
@@ -9,3 +9,5 @@ location: "Singapore"
 ---
 
 Departmental seminar given at [A*STAR, Singapore](https://www.a-star.edu.sg/).
+
+![me talking](/images/talk_astar.jpeg)

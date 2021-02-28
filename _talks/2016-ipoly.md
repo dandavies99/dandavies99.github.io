@@ -9,3 +9,5 @@ location: "San Sebastian, Spain"
 ---
 
 My first talk at an international conference could not have been in a more beautiful [location](http://ipolymorphs.dipc.org/).
+
+![me talking](/images/talk_ipolymorphs.jpeg)

@@ -9,3 +9,5 @@ location: "Liverpool, UK"
 ---
 
 Slides available [here](https://speakerdeck.com/dandavies99/navigating-the-combinatorial-materials-space?slide=29).
+
+![me talking](/images/talk_cecam1.jpeg)
