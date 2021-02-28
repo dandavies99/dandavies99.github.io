@@ -10,4 +10,8 @@ citation: 'K T Butler, D W Davies, H Cartwright, O Isayev and A Walsh. &quot;Mac
 ---
 We outline how machine learning techniques are rapidly changing the game in all areas of chemistry, from guiding chemical synthesis, to enhancing theoretical chemistry, to directly accelerating the scientific method. We tried to cover many areas while ensuring this paper is a useful quick-start guide for readers new to the topic. 
 
+The Authors (minus Hugh, sadly) eventually converged on Imperial College London to meet in person, over a year after publication!
+![authors](../images/nature_dream_team.jpg)
+
+
 [Download paper here](http://dandavies99.github.io/files/2018_nature.pdf)
