@@ -35,5 +35,3 @@ The challenge I find most interesting is trying to predict stable compounds with
 A combination of python packages (pandas, scikit-learn, pymatgen, smact...) and a selection of queryable databases of materials properties (The Materials Project, The Computational Materials Repository...) usually get the job done. I have also been fortunate to collaborate with many experimental groups who can make our imagined compounds with awesome properties a reality. 
 
 For a wider overview, you can read our quick-start guide on [_Machine Learning for Molecular and Materials Science_](https://dandavies99.github.io/publication/2018_nature), which appeared in Nature in 2018. 
-
-
