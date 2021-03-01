@@ -37,13 +37,13 @@ Skills
   * Expert in Python
   * Other languages: FORTRAN, Bash, LaTeX, some Julia
   * Implement Git version control, unit testing, continuous build and test integration
-* Materials Informatics
+* Materials informatics
   * Developer of [SMACT](https://github.com/WMD-group/smact)
   * Expert user of Pymatgen, Matminer, ASE and OpenBabel
-* Machine Learning
+* Machine learning
   * User of Pandas, Scikit-learn, MongoDB and SQL databases, TensorFlow
   * Implement supervised learning models such as random forest, GBR and SVM
-* Electronic Structure
+* Electronic structure
   * Expert VASP user and intermediate GPAW user
   * Manage autoamted calculations with Fireworks and Atomate
 * Report and grant writing

@@ -18,7 +18,7 @@ Searching the materials hyperspace
 
 My research focuses on the discovery of new inorganic materials for clean energy. Application areas have so far included solar absorbers, transparent conductors, thermoelectrics, photocatalysts and battery cathodes. 
 
-The workflow of a typical study is often something like: **1.** generate a sensible, and often very large, search space of hypothetical compositions or compounds (see the [SMACT](https://github.com/wmd-group/smact) code) **2.** use chemical heuristics, machine learning, or other data-driven filters to significantly narrow down the search space **3.** subject top candidates to accurate first-principles methods to predict their properties.
+A typical computational materials screening process is: **1.** generate a sensible, and often very large, search space of hypothetical compositions or compounds (see the [SMACT](https://github.com/wmd-group/smact) code) **2.** use chemical heuristics, machine learning, or other data-driven filters to significantly narrow down the search space **3.** subject top candidates to accurate first-principles methods to predict their properties. I develop models and tools that help with all three steps. 
 
 Software
 -----
@@ -30,8 +30,8 @@ More recently, I have been involved in the development of [Thermoplotter](https:
 Materials data and machine learning
 ---
 
-The challenge I find most interesting is trying to predict stable compounds with target properties using existing materials data. Traditionally, this has been done using chemical heuristic, which certainly [come in useful](https://dandavies99.github.io/publication/2018_chemsci), but [more recently](https://dandavies99.github.io/publication/2019_chemmater) I have relied more upon supervised machine learning models.
+Trying to predict stable compounds with target properties using existing materials data is an enjoyable challenge. Traditionally, this has been done using chemical heuristic, which certainly [come in useful](https://dandavies99.github.io/publication/2018_chemsci), but [more recently](https://dandavies99.github.io/publication/2019_chemmater) I have relied more upon supervised machine learning models.
 
-A combination of python packages (pandas, scikit-learn, pymatgen, smact...) and a selection of queryable databases of materials properties (The Materials Project, The Computational Materials Repository...) usually get the job done. I have also been fortunate to collaborate with many experimental groups who can make our imagined compounds with awesome properties a reality. 
+A combination of python packages (pandas, scikit-learn, pymatgen, smact...) and a selection of queryable databases of materials properties (The Materials Project, The Computational Materials Repository...) usually get the job done. I have also been fortunate to collaborate with experimental groups who can make our imagined compounds with awesome properties a reality. 
 
 For a wider overview, you can read our quick-start guide on [_Machine Learning for Molecular and Materials Science_](https://dandavies99.github.io/publication/2018_nature), which appeared in Nature in 2018. 
