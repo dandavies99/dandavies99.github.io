@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Dan and I'm a computational materials chemist, currently based in the chemistry department of UCL within the group of [Prof. David Scanlon](http://davidscanlon.com). I completed a Chemistry MChem at the University of Bath, then stayed on to carry out my MRes, then PhD on [_"Materials discovery using chemical heuristics and high-throughput calculations"_](https://dandavies99.github.io/files/my_thesis.pdf) under the supervision of [Prof. Aron Walsh](https://wmd-group.github.io). I was then awarded a [Doctoral Prize Fellowship](https://epsrc.ukri.org/skills/students/dta/doctoralprize/) at Imperial College London. 
+I'm a computational materials chemist, currently based in the chemistry department of UCL within the group of [Prof. David Scanlon](http://davidscanlon.com). I completed a Chemistry MChem at the University of Bath and stayed on to carry out my MRes, then PhD on [_"Materials discovery using chemical heuristics and high-throughput calculations"_](https://dandavies99.github.io/files/my_thesis.pdf) under the supervision of [Prof. Aron Walsh](https://wmd-group.github.io). I was then awarded a [Doctoral Prize Fellowship](https://epsrc.ukri.org/skills/students/dta/doctoralprize/) at Imperial College London. 
 
 About my research
 ======
