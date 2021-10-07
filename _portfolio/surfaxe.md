@@ -1,6 +1,6 @@
 ---
 title: "Surfaxe: Automated First-Principles Calcualtions of Surface Properties"
-excerpt: "A package to assist with reliable and systematic calcualtions of surface properties"
+excerpt: "A package to assist with reliable and systematic calcualtions of surface properties <br/><img src='/images/surfaxe_header.png'>"
 collection: portfolio
 ---
 
