@@ -1,6 +1,6 @@
 ---
 title: 'Fine Tuning Django User Permissions'
-date: 2012-08-14
+date: 2021-11-19
 permalink: /posts/2021/11/django-permissions/
 tags:
   - RSE
