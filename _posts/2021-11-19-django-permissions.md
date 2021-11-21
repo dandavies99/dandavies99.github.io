@@ -20,18 +20,18 @@ To give some context, I wrote this post after setting up a permissions framework
 - [Goal 4](#goal-4-enable-object-level-permissions-with-django-guardian): Have control over permissions at the object level -- not just the model level -- so that the same user can perform different actions on two instances of the same model.
 - [Goal 5](#goal-5-set-object-level-permissions-automatically-using-signal-handlers): Make sure object-level permissions propagate automatically when new objects and users are created or changed. 
 
-## Preliminaries
-Before diving into the rest of the article, I'll put a quick recap here of some Django permissions basics. If you're familiar with the Django authentication system, you may want to skip this section. 
-### Preliminary 1: Django Permissions 101
+Before diving into the rest of the article, I'll put a quick recap here of some Django permissions basics. If you're familiar with the Django authentication system, you may want to skip this section.
+
+## Preliminary 1: Django Permissions 101
  Users and permissions are two key components of the Django [authentication system](https://docs.djangoproject.com/en/2.2/topics/auth/). This, like the rest of Django, is very well documented, but some key points are:
 
-#### There are four default permissions.
+### There are four default permissions
 As long as `django.contrib.auth` is in your `INSTALLED_APPS` [settings](https://docs.djangoproject.com/en/2.2/ref/settings/#std:setting-INSTALLED_APPS), four [default permissions](https://docs.djangoproject.com/en/2.2/topics/auth/default/#default-permissions) -- *add, delete, change, view* -- are created for each model. 
 
-#### Permissions are essentially binary flags.
+### Permissions are essentially binary flags
 These flags determine whether users can perform a certain task on each  model. Groups can also be given permissions and users get the permissions of the groups they belong to. 
 
-#### Assigning, removing and checking permissions is straightforward.
+### Assigning, removing and checking permissions is straightforward
 Assuming we have a user with username "A.User", we can grant them a permission for Experiments, after importing the relevant models:
 ```python
 from django.contrib.auth.models import User, Permission
@@ -64,7 +64,7 @@ user.user_permissions.remove(permission)
 
 ***Caveat**: If you try to run the above code in one go, you actually would need to reload the user from the database e.g. with `user = User.objects.get(...` before checking if a permission has been applied or removed. This is expected behaviour due to [permissions caching in Django.](https://docs.djangoproject.com/en/3.2/topics/auth/default/#permission-caching)*
 
-#### You can add any custom permissions you want.
+### You can add any custom permissions you want
 Given that they are basically yes/no flags, there's nothing complicated about adding extra permissions beyond the four default ones, which can be evaluated when needed. For example, we could add to the Experiment model:
 ```python
 class Experiment:
@@ -80,7 +80,7 @@ Which would allow you to check elsewhere in the code:
 user.has_perm("batteryDB.change_experiment_status")
 ```
 
-#### Permissions are usually enforced in the _view_ layer.
+### Permissions are usually enforced in the _view_ layer
  As we've seen, users either have a certain permission or they don't. The models don't enforce permissions because the model is not aware of the user performing an action. The action is usually defined in the view layer, which is why permissions are mostly enforced in the view layer too. A simple permissions check to evaluate whether a user making a request to view a list of experiments in the database might look like:
  ```python
 from django.core.exceptions import PermissionDenied
@@ -92,7 +92,7 @@ def experiment_list_view(request):
 ```
  
 
-### Preliminary 2: The custom User model
+## Preliminary 2: The custom User model
 If starting a Django project from scratch, [it is highly recommended](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project) to set up a custom user model. This gives more flexibility to extend the model should you need to in the future, for very little effort. If the `User` model turns out to be sufficient, great! You have only wasted a few minutes setting up a custom model, which works exactly like the built in `User` model. 
 
 On the flip side, if you end up having to change the user model mid-project, this [can get messy](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#changing-to-a-custom-user-model-mid-project) and will take significantly more time than setting up a custom model from the get-go. 
