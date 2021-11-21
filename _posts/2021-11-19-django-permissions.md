@@ -14,11 +14,11 @@ User permissions are an important consideration for any web application and the 
 This post is aimed at developers with some familiarity of the Django framework and its authentication system who want a more granular permissions setup than is immediately available out of the box (see the five goals below). For a refresher on Django in general there's no better place than the offial [Django tutorials](https://docs.djangoproject.com/en/3.2/intro/tutorial01/). For a clear and thorough overview of permissions in Django, I highly recommend [this article](https://blog.urbanpiper.com/django-permissions/).
 
 To give some context, I wrote this post after setting up a permissions framework for a database of scientific measurements relating to the performance of new battery materials. I'll use the main `Experiment` model in the `batteryDB` app for most examples. Overall I wanted to achieve the following five goals:
-[Goal 1](#goal-1:-define-user-roles-using-groups): Have user roles with different levels of permissions. For simplicity, we will focus **read only users** who can search through the public data and **maintainers** who have full control over the scientific data.
-[Goal 2](#goal-2:-set-up-groups-when-the-project-is-initialised-using-a-data-migration): Set up these user roles as soon as the project is initialised. 
-[Goal 3](#goal-3:-ensure-roles-cannot-be-changed-by-locking-down-the-user-admin-page): Ensure that users cannot escalate their own privileges via Django's built in admin system.
-[Goal 4](#goal-4:-enable-object-level-permissions-with-django-guardian): Have control over permissions at the object level -- not just the model level -- so that the same user can perform different actions on two instances of the same model.
-[Goal 5](#goal-5:-set-object-level-permissions-automatically-using-signal-handlers): Make sure object-level permissions propagate automatically when new objects and users are created or changed. 
+- [Goal 1](#goal-1-define-user-roles-using-groups): Have user roles with different levels of permissions. For simplicity, we will focus **read only users** who can search through the public data and **maintainers** who have full control over the scientific data.
+- [Goal 2](#goal-2-set-up-groups-when-the-project-is-initialised-using-a-data-migration): Set up these user roles as soon as the project is initialised. 
+- [Goal 3](#goal-3-ensure-roles-cannot-be-changed-by-locking-down-the-user-admin-page): Ensure that users cannot escalate their own privileges via Django's built in admin system.
+- [Goal 4](#goal-4-enable-object-level-permissions-with-django-guardian): Have control over permissions at the object level -- not just the model level -- so that the same user can perform different actions on two instances of the same model.
+- [Goal 5](#goal-5-set-object-level-permissions-automatically-using-signal-handlers): Make sure object-level permissions propagate automatically when new objects and users are created or changed. 
 
 ## Preliminaries
 Before diving into the rest of the article, I'll put a quick recap here of some Django permissions basics. If you're familiar with the Django authentication system, you may want to skip this section. 
