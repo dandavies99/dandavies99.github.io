@@ -14,11 +14,11 @@ User permissions are an important consideration for any web application and the 
 This post is aimed at developers with some familiarity of the Django framework and its authentication system who want a more granular permissions setup than is immediately available out of the box (see the five goals below). For a refresher on Django in general there's no better place than the offial [Django tutorials](https://docs.djangoproject.com/en/3.2/intro/tutorial01/). For a clear and thorough overview of permissions in Django, I highly recommend [this article](https://blog.urbanpiper.com/django-permissions/).
 
 To give some context, I wrote this post after setting up a permissions framework for a database of scientific measurements relating to the performance of new battery materials. I'll use the main `Experiment` model in the `batteryDB` app for most examples. Overall I wanted to achieve the following five goals:
-1. Have user roles with different levels of permissions. For simplicity, we will focus **read only users** who can search through the public data and **maintainers** who have full control over the scientific data.
-2. Set up these user roles as soon as the project is initialised. 
-3. Ensure that users cannot escalate their own privileges via Django's built in admin system.
-4. Have control over permissions at the object level -- not just the model level -- so that the same user can perform different actions on two instances of the same model.
-5. Make sure object-level permissions propagate automatically when new objects and users are created or changed. 
+[Goal 1](#goal-1:-define-user-roles-using-groups): Have user roles with different levels of permissions. For simplicity, we will focus **read only users** who can search through the public data and **maintainers** who have full control over the scientific data.
+[Goal 2](#goal-2:-set-up-groups-when-the-project-is-initialised-using-a-data-migration): Set up these user roles as soon as the project is initialised. 
+[Goal 3](#goal-3:-ensure-roles-cannot-be-changed-by-locking-down-the-user-admin-page): Ensure that users cannot escalate their own privileges via Django's built in admin system.
+[Goal 4](#goal-4:-enable-object-level-permissions-with-django-guardian): Have control over permissions at the object level -- not just the model level -- so that the same user can perform different actions on two instances of the same model.
+[Goal 5](#goal-5:-set-object-level-permissions-automatically-using-signal-handlers): Make sure object-level permissions propagate automatically when new objects and users are created or changed. 
 
 ## Preliminaries
 Before diving into the rest of the article, I'll put a quick recap here of some Django permissions basics. If you're familiar with the Django authentication system, you may want to skip this section. 
@@ -256,7 +256,7 @@ And that's it! Now, when we run the migrations and start the server for the firs
 
 We've kept the `populate_groups` function separate and imported it into the new migration for the simple reason that migrations are easily overlooked or even overwritten during code reviews. A separate python file is less likely to suffer the same fate. 
 
-## Goal 3: Ensure roles can't be changed by locking down the user admin page
+## Goal 3: Ensure roles cannot be changed by locking down the user admin page
 The Django admin site does use model permissions out of the box: If the user has no permissions on a model, they can't see and access it in the admin. If they only have view and change permissions on a model, they can view and update instances but not add new ones. There is a slight quirk for being able to *add* users, in that you [must also have *change* permissions](https://docs.djangoproject.com/en/3.2/topics/auth/default/#id6) - otherwise anyone with *add_user* permissions could just create a superuser. 
 
 This highlights just one issue that arises if you want non-superusers to interact with the Django admin site - as might well be the case for our maintainers. The default admin site needs to be tweaked in such cases and there is a very good article on this topic [here](https://realpython.com/manage-users-in-django-admin/), which I followed to produce the following custom UserAdmin:
@@ -300,7 +300,7 @@ admin.site.register(User, CustomUserAdmin)
 
 Here, we have [disabled fields](https://docs.djangoproject.com/en/3.2/ref/forms/fields/#disabled) depending on the type of request being made. This gives us the flexibility that a staff user with appropriate permission (i.e. change user) would still be able to add/remove users from groups, affecting that users permissions in a controlled way, but would not be able to make them a superuser, nor add or remove individual permissions. 
 
-## Goal 4: Enable object-level permissions with Django Guardian 
+## Goal 4: Enable object level permissions with Django Guardian 
 There are many scenarios where you might want object-level (a.k.a. row-level) permissions, as opposed to model-level permissions, as we've seen so far. In our case, an `Experiment` with `status = "public"` should be viewable by all read only users, whereas an `Experiment` with `status = "private"` should only be viewable to the uploading user.
 
 [Django Guardian](https://django-guardian.readthedocs.io/en/stable/) is written exactly for this purpose, is well documented and is [easily installed](https://django-guardian.readthedocs.io/en/stable/installation.html) into an existing project. We can make use of the shortcuts provided to assign and remove permissions for specific user:object combinations.
@@ -340,7 +340,7 @@ A neat feature of Django Guardian is the ability to check how things are going b
 
 "Can add experiment" shows as false for everyone because it is not set for this specific model *instance*. Remember that maintainers can add Experiments in general, as we set up in Goal 2, but they can't add this specific experiment because we haven't set that permission. It would make no sense to be able to add an existing instance of a model.
 
-## Goal 5: Set object-level permissions automatically using signal handlers
+## Goal 5: Set object level permissions automatically using signal handlers
 The last piece of the puzzle is where code from Goal 4 should go. This was the trickiest part to figure out for me but I found the closest example to what I was aiming for [here](https://coderbook.com/@marcus/how-to-restrict-access-with-django-permissions/) (at the very bottom of the post). 
 
 Essentially, I wanted the correct permissions to be applied whenever an instance of a model was added or changed. It turns out that what I was looking for was Django [signals](https://docs.djangoproject.com/en/3.2/ref/signals/), and in particular  `post_save` signals. Signals allow *senders* to notify *receivers* that some action (e.g. saving an object) has taken place. The `post_save` signal takes place after a model's `.save()` method is called, so is exactly what we need. 
