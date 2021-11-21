@@ -99,7 +99,7 @@ On the flip side, if you end up having to change the user model mid-project, thi
 
 A custom model can be implemented in three steps before running `manage.py makemigrations` for the first time:
 
-1. Define the `User` model in `models.py` of a suitably central app, or in a separate app:
+Step 1: Define the `User` model in `models.py` of a suitably central app, or in a separate app:
 
 ```python
 from django.contrib.auth.models import AbstractUser
@@ -107,7 +107,7 @@ class User(AbstractUser):
 	pass
 ```
 
-2. Register the model in the app's `admin.py`:
+Step 2: Register the model in the app's `admin.py`:
 
 ```python
 from django.contrib import admin
@@ -117,7 +117,7 @@ from .models import User
 admin.site.register(User, UserAdmin)
 ```
 
-3. Point `AUTH_USER_MODEL` to the new model in `settings.py`, e.g.:
+Step 3: Point `AUTH_USER_MODEL` to the new model in `settings.py`, e.g.:
 
 ```python
 AUTH_USER_MODEL = "management.User"
