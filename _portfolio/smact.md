@@ -1,10 +1,10 @@
 ---
 title: "SMACT: Semiconducting Materials by Analogy and Chemical Theory"
-excerpt: "Python package for cheep screening of inorganic compounds and compositions <br/><img src='/images/SMACT.png'>"
+excerpt: "Python package for cheap screening of inorganic compounds and compositions <br/><img src='/images/SMACT.png'>"
 collection: portfolio
 ---
 
-The core functionality of SMACT is to efficiently build very large lists of "chemically sensible" compositions (chemical formulas) or compounds (with crystal structure), then quickly screen through them using cheap metrics. 
+The core functionality of SMACT is to efficiently build very large lists of "chemically sensible" compositions (chemical formulas) or compounds (with crystal structure), then quickly screen through them using cheap metrics.
 
 It is designed to be cheap to run, so should work on your desktop/laptop. Read the docs [here](https://smact.readthedocs.io/en/latest/) or take a look at the [GitHub repository](https://github.com/WMD-group/SMACT).
 
