@@ -1,6 +1,6 @@
 ---
 title: "Thermoplotter: Streamlined Analysis of Thermoelectric Properties"
-excerpt: "A simplified analysis and plotting workflow for thermoelectric properties <br/><img src='/images/tp-logo.png'>"
+excerpt: "A simplified analysis and plotting workflow for thermoelectric properties <br/><img src='/images/tp-logo-cropped.png' width=250 class='center'>"
 collection: portfolio
 ---
 
