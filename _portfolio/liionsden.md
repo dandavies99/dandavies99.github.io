@@ -1,6 +1,6 @@
 ---
 title: "Liionsden: Webapp for the Analysis of Li-ion Battery Materials"
-excerpt: "A Django webapp to parse and store battery cycler data and metadata <br/><img src='/images/liionsden-homepage.png' width=250 class='center'>"
+excerpt: "A Django webapp to parse and store battery cycler data and metadata <br/><center><img src='/images/liionsden-homepage.png' width=250></center>"
 collection: portfolio
 ---
 
