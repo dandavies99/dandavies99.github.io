@@ -1,6 +1,6 @@
 ---
 title: "SMACT: Semiconducting Materials by Analogy and Chemical Theory"
-excerpt: "Python package for cheap screening of inorganic compounds and compositions <br/><img src='/images/SMACT.png' width=250>"
+excerpt: "Python package for cheap screening of inorganic compounds and compositions <br/><center><img src='/images/SMACT.png' width=250></center>"
 collection: portfolio
 ---
 
