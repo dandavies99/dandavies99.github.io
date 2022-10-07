@@ -43,7 +43,7 @@ Skills
 
 * Software engineering
   * Expert in Python
-  * Webapp development with Django and Flask
+  * Webapp development with Django and Dash
   * Git version control
   * Unit tests, continuous integration and deployment
   * Containerisation with Docker
