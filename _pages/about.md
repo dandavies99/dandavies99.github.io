@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a senior research software engineer based within the [Research Computing Service](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/) of Imperial College London. I'm originally from Bournemouth, UK, and studied chemistry at the University of Bath. Throughout my PhD I developed a passion for software engineering and data science, and I now work on a range of projects to enable research across the college.
+I am a software developer at [BenevolentAI](https://www.benevolent.com/), where I work alongside the cheminformatics and compchem team, developing tools that they use in their day-to-day work. Previously, I was a senior research software engineer based within the [Research Computing Service](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/) of Imperial College London. I'm originally from Bournemouth, UK, and studied chemistry at the University of Bath. Throughout my PhD I developed a passion for software engineering and data science, and I now work on a range of projects to enable research across the college.
 
 Software
 ======
