@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Daniel W Davies"
 title_separator          : "-"
 name                     : &name "Daniel W Davies"
-description              : &description "Computational chemist"
+description              : &description "Cheminformatics Software Developer"
 url                      : https://dandavies99.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dandavies99/dandavies99.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Dr Daniel W Davies"
   avatar           : "profile.png"
-  bio              : "Senior Research Software Engineer at Imperial College London"
+  bio              : "Advanced Cheminformatics Software Developer at BenevolentAI"
   location         : "London, UK"
   employer         :
   pubmed           : 
