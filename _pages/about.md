@@ -8,12 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I am a software developer at [BenevolentAI](https://www.benevolent.com/), where I work alongside the cheminformatics and compchem team, developing tools that they use in their day-to-day work. Previously, I was a senior research software engineer based within the [Research Computing Service](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/) of Imperial College London. I'm originally from Bournemouth, UK, and studied chemistry at the University of Bath. Throughout my PhD I developed a passion for software engineering and data science, and I now work on a range of projects to enable research across the college.
+I am a software developer at [BenevolentAI](https://www.benevolent.com/), where I work alongside the computer-aided drug design (CADD) team, developing tools that they use in their day-to-day work. Previously, I was a senior research software engineer based within the [Research Computing Service](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/) of Imperial College London. I'm originally from Bournemouth, UK, and studied chemistry at the University of Bath. Throughout my PhD I developed a passion for software engineering and data science, and I now work on a range of projects to enable research across the college.
 
 Software
 ======
 
-I joined the central research software engineering team in August 2021 and now work with researchers from all departments to produce performant and reliable software to tackle cutting-edge research challenges. I have worked on a range of projects making use of various technologies to design GUIs, webapps, APIs and data pipelines. A number of projects have included a large infrastructure element, enabling me to build research tools on college virtual machines and in the cloud.
+I joined the central research software engineering team at Imperial College London in August 2021 and worked with researchers from all departments to produce performant and reliable software to tackle cutting-edge research challenges. I have worked on a range of projects making use of various technologies to design GUIs, webapps, APIs and data pipelines. A number of projects included a large infrastructure element, enabling me to build research tools on college virtual machines and in the cloud.
+
+In March 2023 I joined BenevolentAI's CADD team, where my focus has been the development of sustainable, performant cheminformatics and computational chemistry software, and its deployment in the cloud.
 
 Research Background
 ======
